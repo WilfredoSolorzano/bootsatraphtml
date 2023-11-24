@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de registro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulário de registro</h2>
+        <div class="row">
+            <form>
+            <div class="form-group">
+                <label class="form-label" for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome"  required oninvalid="this.setCustomValidity('Por favor, preencha o campo Nome')">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="email">Email:</label>
+                <input type="email" class="form-control" id="email"  placeholder="Digite seu e-mail" required oninvalid="this.setCustomValidity('Por favor, preencha o campo E-mail')">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="telefone">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone"  placeholder="Digite seu telefone" required oninvalid="this.setCustomValidity('Por favor, preencha o campo Telefone')">
+            </div>
+            <button class="btn btn-success">Enviar</button>
+        </form>
+        </div>
+    </div>
+    <footer>
+        <div class="conteiner-flex">
+        <p>2023 &copy; EBAC-Virtual-todos os direitos reservados</p>
+        <ul class="conteiner-flex">
+            <li>
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://img.freepik.com/vetores-premium/icone-do-aplicativo-instagram-logotipo-da-midia-social-ilustracao-em-vetor_277909-403.jpg" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://assets.turbologo.com/blog/es/2019/10/19133013/youtube-logo-illustration-958x575.jpg" alt="youtube">
+                </a>
+            </li>
+        </ul>
+    </div>
+    </footer>
+</body>
+</html>
